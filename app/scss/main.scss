@@ -31,6 +31,8 @@ body {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+          width: 100%;
+          text-align: center;
      }
 }
 
@@ -80,15 +82,15 @@ body {
      height: 0;
      transition: opacity 2s, visibility 2s;
 
-     @include media-breakpoint-down(md) {
-          height: 100vh;
-     }
-
      &__active {
           opacity: 1;
           visibility: visible;
           height: 69rem;
           transition: opacity 2s, visibility 2s;
+
+          @include media-breakpoint-down(md) {
+               height: 100vh;
+          }
      }
 }
 
@@ -103,6 +105,9 @@ body {
           background-position-x: -30rem;
      }
 
+     @include media-breakpoint-down(sm) {
+          background-position-x: -38rem;
+     }
 
 
      &__num-1 {
