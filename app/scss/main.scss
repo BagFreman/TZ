@@ -17,7 +17,7 @@ $tr: all .2s ease-in-out;
 }
 
 body {
-     background-color: #fff;
+     background-color: $gray;
 }
 
 .main-btn {
@@ -75,9 +75,9 @@ body {
 .slider {
      width: 100%;
      position: relative;
-     opacity: 1;
-     visibility: visible;
-     height: 69rem;
+     opacity: 0;
+     visibility: hidden;
+     height: 0;
      transition: opacity 2s, visibility 2s;
 
      @include media-breakpoint-down(md) {
